@@ -10,7 +10,23 @@
       "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(f'AWS regions: {len\\(d[\\\\\"features\\\\\"]\\)}'\\)\")",
       "Bash(curl -s \"http://localhost:3000/api/military/bases?country=japan\")",
       "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(f'Japan bases: {len\\(d[\\\\\"features\\\\\"]\\)}'\\)\")",
-      "Bash(kill %1)"
+      "Bash(kill %1)",
+      "Bash(node -e \"const d = require\\('./data/us_military_bases.json'\\); const ng = d.features.filter\\(f => /national guard/i.test\\(f.properties.branch + ' ' + f.properties.name\\)\\); console.log\\('National Guard entries:', ng.length\\);\")",
+      "Bash(mkdir -p /home/luc/Desktop/commodity-tracker/public)",
+      "Bash(npm install *)",
+      "Bash(curl -s http://localhost:3001/api/prices)",
+      "Bash(node -e \"import\\('yahoo-finance2'\\).then\\(m => console.log\\(Object.keys\\(m\\)\\)\\).catch\\(e => console.log\\(e.message\\)\\)\")",
+      "Bash(node -e \"import\\('yahoo-finance2'\\).then\\(m => { const yf = m.default; console.log\\(typeof yf, Object.keys\\(yf\\).slice\\(0,20\\)\\); }\\)\")",
+      "Bash(node -e \"import\\('yahoo-finance2'\\).then\\(m => { const yf = m.default; const proto = Object.getOwnPropertyNames\\(Object.getPrototypeOf\\(yf\\)\\); console.log\\(proto\\); }\\)\")",
+      "Bash(node -e \"import\\('yahoo-finance2'\\).then\\(m => { const yf = m.default; console.log\\(JSON.stringify\\(Object.getOwnPropertyDescriptors\\(yf\\), null, 2\\)\\); }\\).catch\\(console.error\\)\")",
+      "Bash(node -e \"import\\('yahoo-finance2'\\).then\\(async m => { const YF = m.default; const yf = new YF\\(\\); console.log\\(Object.getOwnPropertyNames\\(Object.getPrototypeOf\\(yf\\)\\).slice\\(0,30\\)\\); }\\).catch\\(console.error\\)\")",
+      "Bash(fuser -k 3001/tcp)",
+      "Bash(pkill -f \"commodity-tracker/server.js\")",
+      "Bash(node /home/luc/Desktop/commodity-tracker/server.js)",
+      "Bash(kill 2486)"
+    ],
+    "additionalDirectories": [
+      "/home/luc/Desktop/commodity-tracker"
     ]
   }
 }

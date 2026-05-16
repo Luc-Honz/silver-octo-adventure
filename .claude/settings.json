@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c ' *)",
+      "Bash(pkill -f \"node server.js\")",
+      "Bash(pkill -f \"node.*silver-octo-adventure/server.js\")",
+      "Bash(pkill -f \"node.*commodity-tracker/server.js\")",
+      "Bash(pkill -f \"node.*dashboard/server.js\")",
+      "Bash(curl -s http://localhost:3002/api/prices)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('prices ok, count=', len\\(d['prices']\\)\\)\")",
+      "Bash(curl -s http://localhost:3002/api/ukraine/frontline)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('frontline ok, type=', d['type']\\)\")",
+      "Bash(curl -s http://localhost:3002/map)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('geo ok:', d['type']\\)\")",
+      "Bash(fuser -k 3002/tcp)",
+      "Bash(fuser -k 3000/tcp)",
+      "Bash(curl -s http://localhost:3002/map/)",
+      "Bash(curl -v http://localhost:3002/map)"
+    ]
+  }
+}

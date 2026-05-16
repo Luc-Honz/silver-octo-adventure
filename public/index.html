@@ -43,6 +43,8 @@
     .toggle-btn.datacenters.active { background: rgba(78,205,196,0.15); }
     .toggle-btn.military { color: #ffe66d; }
     .toggle-btn.military.active { background: rgba(255,230,109,0.15); }
+    .toggle-btn.flights { color: #ffffff; }
+    .toggle-btn.flights.active { background: rgba(255,255,255,0.12); }
 
     .dot { width: 8px; height: 8px; border-radius: 50%; background: currentColor; flex-shrink: 0; }
 
@@ -123,6 +125,9 @@
       <button class="toggle-btn military active" id="btn-military" onclick="toggleLayer('military')">
         <span class="dot"></span> US Military Bases
       </button>
+      <button class="toggle-btn flights" id="btn-flights" onclick="toggleFlights()">
+        <span class="dot"></span> Flights
+      </button>
     </div>
   </div>
 
@@ -183,17 +188,55 @@
       <span class="stat-label" style="color:#ffe66d">Military Bases</span>
       <span class="stat-val" id="stat-mil">—</span>
     </div>
+    <div class="stat-row" id="stat-flights-row" style="display:none">
+      <span class="stat-label" style="color:#ffffff">Flights</span>
+      <span class="stat-val" id="stat-flights">—</span>
+    </div>
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
   <script>
-    const map = L.map('map', { zoomControl: true }).setView([20, 10], 2);
+    const WORLD_BOUNDS = L.latLngBounds(L.latLng(-75, -180), L.latLng(85, 180));
 
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    const map = L.map('map', {
+      zoomControl: true,
+      maxBounds: WORLD_BOUNDS,
+      maxBoundsViscosity: 1.0,
+      minZoom: 2,
+      worldCopyJump: false,
+    });
+
+    // Fit view so left edge = eastern Russia / right edge = western Alaska
+    // i.e. the full world with the date-line seam at both edges
+    map.fitBounds([[-65, -180], [82, 180]]);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png', {
       attribution: '&copy; OpenStreetMap, &copy; CartoDB',
       subdomains: 'abcd',
-      maxZoom: 19
+      maxZoom: 19,
+      noWrap: true,
     }).addTo(map);
+
+    // Country borders
+    fetch('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json')
+      .then(r => r.json())
+      .then(world => {
+        const countries = topojson.feature(world, world.objects.countries);
+        L.geoJSON(countries, {
+          style: { color: '#ffffff', weight: 0.6, opacity: 0.35, fillOpacity: 0 }
+        }).addTo(map);
+      });
+
+    // US state borders
+    fetch('https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json')
+      .then(r => r.json())
+      .then(us => {
+        const states = topojson.feature(us, us.objects.states);
+        L.geoJSON(states, {
+          style: { color: '#ffffff', weight: 0.4, opacity: 0.25, fillOpacity: 0 }
+        }).addTo(map);
+      });
 
     const layers = { frontline: null, datacenters: null, military: null };
     const visibility = { frontline: true, datacenters: true, military: true };
@@ -352,6 +395,59 @@
     }
 
     loadAll();
+
+    // --- Flight radar ---
+    let flightLayer = L.layerGroup();
+    let flightInterval = null;
+    let flightsOn = false;
+
+    const planeIcon = L.divIcon({
+      className: '',
+      html: '<div style="width:2px;height:2px;background:#ffffff;border-radius:50%"></div>',
+      iconSize: [2, 2],
+      iconAnchor: [1, 1],
+    });
+
+    async function fetchFlights() {
+      try {
+        const data = await fetch('/api/flights').then(r => r.json());
+        flightLayer.clearLayers();
+        (data.planes || []).forEach(p => {
+          const m = L.marker([p.lat, p.lon], { icon: planeIcon });
+          m.bindPopup(`
+            <div class="popup-tag" style="background:#ffffff22;color:#ffffff">FLIGHT</div>
+            <div class="popup-title">${p.callsign}</div>
+            ${p.reg ? `<div class="popup-row"><span>Reg:</span><span>${p.reg}</span></div>` : ''}
+            ${p.altitude !== null ? `<div class="popup-row"><span>Altitude:</span><span>${p.altitude.toLocaleString()} ft</span></div>` : ''}
+            ${p.velocity !== null ? `<div class="popup-row"><span>Speed:</span><span>${p.velocity} kts</span></div>` : ''}
+            ${p.vertRate ? `<div class="popup-row"><span>V/S:</span><span>${p.vertRate > 0 ? '+' : ''}${p.vertRate} fpm</span></div>` : ''}
+          `);
+          flightLayer.addLayer(m);
+        });
+        document.getElementById('stat-flights').textContent = (data.count || 0).toLocaleString() + ' planes';
+      } catch (e) {
+        // keep existing layer on error
+      }
+    }
+
+    function toggleFlights() {
+      flightsOn = !flightsOn;
+      const btn = document.getElementById('btn-flights');
+      const row = document.getElementById('stat-flights-row');
+      if (flightsOn) {
+        btn.classList.add('active');
+        row.style.display = '';
+        flightLayer.addTo(map);
+        fetchFlights();
+        flightInterval = setInterval(fetchFlights, 15000);
+      } else {
+        btn.classList.remove('active');
+        row.style.display = 'none';
+        map.removeLayer(flightLayer);
+        clearInterval(flightInterval);
+        flightInterval = null;
+      }
+    }
   </script>
 </body>
 </html>

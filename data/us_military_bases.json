@@ -7,114 +7,636 @@
     "note": "Locations are approximate city/region coordinates of publicly known installations"
   },
   "features": [
-    { "type": "Feature", "properties": { "name": "Fort Liberty (Bragg)", "branch": "Army", "city": "Fayetteville, NC", "country": "United States", "description": "Home of 82nd Airborne Division, USSOCOM" }, "geometry": { "type": "Point", "coordinates": [-79.00, 35.14] } },
-    { "type": "Feature", "properties": { "name": "Fort Cavazos (Hood)", "branch": "Army", "city": "Killeen, TX", "country": "United States", "description": "Home of III Armored Corps, 1st Cavalry Division" }, "geometry": { "type": "Point", "coordinates": [-97.78, 31.12] } },
-    { "type": "Feature", "properties": { "name": "Fort Campbell", "branch": "Army", "city": "Clarksville, TN/KY", "country": "United States", "description": "Home of 101st Airborne Division (Air Assault)" }, "geometry": { "type": "Point", "coordinates": [-87.47, 36.66] } },
-    { "type": "Feature", "properties": { "name": "Fort Bliss", "branch": "Army", "city": "El Paso, TX", "country": "United States", "description": "Home of 1st Armored Division, Army Air Defense" }, "geometry": { "type": "Point", "coordinates": [-106.38, 31.80] } },
-    { "type": "Feature", "properties": { "name": "Fort Moore (Benning)", "branch": "Army", "city": "Columbus, GA", "country": "United States", "description": "Home of Armor School, Ranger School" }, "geometry": { "type": "Point", "coordinates": [-84.97, 32.35] } },
-    { "type": "Feature", "properties": { "name": "Fort Johnson (Polk)", "branch": "Army", "city": "Leesville, LA", "country": "United States", "description": "JRTC training center" }, "geometry": { "type": "Point", "coordinates": [-93.21, 31.05] } },
-    { "type": "Feature", "properties": { "name": "Fort Stewart", "branch": "Army", "city": "Hinesville, GA", "country": "United States", "description": "Home of 3rd Infantry Division" }, "geometry": { "type": "Point", "coordinates": [-81.62, 31.87] } },
-    { "type": "Feature", "properties": { "name": "Fort Carson", "branch": "Army", "city": "Colorado Springs, CO", "country": "United States", "description": "Home of 4th Infantry Division" }, "geometry": { "type": "Point", "coordinates": [-104.79, 38.73] } },
-    { "type": "Feature", "properties": { "name": "Fort Riley", "branch": "Army", "city": "Junction City, KS", "country": "United States", "description": "Home of 1st Infantry Division (Big Red One)" }, "geometry": { "type": "Point", "coordinates": [-96.79, 39.05] } },
-    { "type": "Feature", "properties": { "name": "Fort Drum", "branch": "Army", "city": "Watertown, NY", "country": "United States", "description": "Home of 10th Mountain Division" }, "geometry": { "type": "Point", "coordinates": [-75.77, 44.05] } },
-    { "type": "Feature", "properties": { "name": "Fort Wainwright", "branch": "Army", "city": "Fairbanks, AK", "country": "United States", "description": "Home of 1st Stryker Brigade Combat Team" }, "geometry": { "type": "Point", "coordinates": [-147.64, 64.83] } },
-    { "type": "Feature", "properties": { "name": "Fort Irwin (NTC)", "branch": "Army", "city": "Barstow, CA", "country": "United States", "description": "National Training Center" }, "geometry": { "type": "Point", "coordinates": [-116.69, 35.27] } },
-    { "type": "Feature", "properties": { "name": "Fort Huachuca", "branch": "Army", "city": "Sierra Vista, AZ", "country": "United States", "description": "US Army Intelligence Center, network ops" }, "geometry": { "type": "Point", "coordinates": [-110.34, 31.55] } },
-    { "type": "Feature", "properties": { "name": "Fort Leavenworth", "branch": "Army", "city": "Leavenworth, KS", "country": "United States", "description": "Army Command and General Staff College, USDB" }, "geometry": { "type": "Point", "coordinates": [-94.92, 39.35] } },
-    { "type": "Feature", "properties": { "name": "West Point (USMA)", "branch": "Army", "city": "West Point, NY", "country": "United States", "description": "US Military Academy" }, "geometry": { "type": "Point", "coordinates": [-73.96, 41.39] } },
-    { "type": "Feature", "properties": { "name": "Fort Meade", "branch": "Army/NSA", "city": "Laurel, MD", "country": "United States", "description": "NSA headquarters, US Cyber Command, DISA" }, "geometry": { "type": "Point", "coordinates": [-76.76, 39.11] } },
-    { "type": "Feature", "properties": { "name": "Fort Bragg / Pope AAF", "branch": "Army/Air Force", "city": "Fayetteville, NC", "country": "United States", "description": "Special Operations Command complex" }, "geometry": { "type": "Point", "coordinates": [-78.94, 35.20] } },
-    { "type": "Feature", "properties": { "name": "Fort Shafter", "branch": "Army", "city": "Honolulu, HI", "country": "United States", "description": "US Army Pacific headquarters" }, "geometry": { "type": "Point", "coordinates": [-157.86, 21.34] } },
-
-    { "type": "Feature", "properties": { "name": "Naval Station Norfolk", "branch": "Navy", "city": "Norfolk, VA", "country": "United States", "description": "World's largest naval station; HQ US Fleet Forces Command" }, "geometry": { "type": "Point", "coordinates": [-76.30, 36.94] } },
-    { "type": "Feature", "properties": { "name": "Naval Station San Diego", "branch": "Navy", "city": "San Diego, CA", "country": "United States", "description": "Largest naval base on US West Coast" }, "geometry": { "type": "Point", "coordinates": [-117.18, 32.68] } },
-    { "type": "Feature", "properties": { "name": "Naval Air Station Pensacola", "branch": "Navy", "city": "Pensacola, FL", "country": "United States", "description": "Cradle of Naval Aviation, Navy flight training" }, "geometry": { "type": "Point", "coordinates": [-87.32, 30.35] } },
-    { "type": "Feature", "properties": { "name": "NAS Patuxent River", "branch": "Navy", "city": "Lexington Park, MD", "country": "United States", "description": "Naval Air Systems Command, test and evaluation" }, "geometry": { "type": "Point", "coordinates": [-76.41, 38.29] } },
-    { "type": "Feature", "properties": { "name": "Joint Base Pearl Harbor-Hickam", "branch": "Navy/Air Force", "city": "Honolulu, HI", "country": "United States", "description": "HQ US Indo-Pacific Command; Pacific Fleet HQ" }, "geometry": { "type": "Point", "coordinates": [-157.96, 21.35] } },
-    { "type": "Feature", "properties": { "name": "NAS Jacksonville", "branch": "Navy", "city": "Jacksonville, FL", "country": "United States", "description": "Naval aviation, P-8 Poseidon operations" }, "geometry": { "type": "Point", "coordinates": [-81.68, 30.23] } },
-    { "type": "Feature", "properties": { "name": "Naval Station Bremerton", "branch": "Navy", "city": "Bremerton, WA", "country": "United States", "description": "Puget Sound Naval Shipyard, carrier maintenance" }, "geometry": { "type": "Point", "coordinates": [-122.63, 47.57] } },
-    { "type": "Feature", "properties": { "name": "NAS Whidbey Island", "branch": "Navy", "city": "Oak Harbor, WA", "country": "United States", "description": "EA-18G Growler electronic warfare aircraft" }, "geometry": { "type": "Point", "coordinates": [-122.66, 48.35] } },
-    { "type": "Feature", "properties": { "name": "Naval Station Mayport", "branch": "Navy", "city": "Jacksonville, FL", "country": "United States", "description": "East Coast carrier and destroyer operations" }, "geometry": { "type": "Point", "coordinates": [-81.42, 30.39] } },
-    { "type": "Feature", "properties": { "name": "NAS Oceana", "branch": "Navy", "city": "Virginia Beach, VA", "country": "United States", "description": "East Coast master jet base, F/A-18 Super Hornets" }, "geometry": { "type": "Point", "coordinates": [-76.04, 36.82] } },
-
-    { "type": "Feature", "properties": { "name": "Wright-Patterson AFB", "branch": "Air Force", "city": "Dayton, OH", "country": "United States", "description": "Air Force Materiel Command HQ, AFRL" }, "geometry": { "type": "Point", "coordinates": [-84.05, 39.83] } },
-    { "type": "Feature", "properties": { "name": "Joint Base Langley-Eustis", "branch": "Air Force/Army", "city": "Hampton, VA", "country": "United States", "description": "Air Combat Command HQ, F-22 Raptor wing" }, "geometry": { "type": "Point", "coordinates": [-76.36, 37.08] } },
-    { "type": "Feature", "properties": { "name": "Nellis AFB", "branch": "Air Force", "city": "Las Vegas, NV", "country": "United States", "description": "USAF Warfare Center, Red Flag exercises, Area 51" }, "geometry": { "type": "Point", "coordinates": [-115.03, 36.24] } },
-    { "type": "Feature", "properties": { "name": "Edwards AFB", "branch": "Air Force", "city": "Edwards, CA", "country": "United States", "description": "Air Force Test Center, new aircraft flight testing" }, "geometry": { "type": "Point", "coordinates": [-117.89, 34.90] } },
-    { "type": "Feature", "properties": { "name": "Eglin AFB", "branch": "Air Force", "city": "Fort Walton Beach, FL", "country": "United States", "description": "Air Force Test Center, F-35 training, Special Ops" }, "geometry": { "type": "Point", "coordinates": [-86.52, 30.48] } },
-    { "type": "Feature", "properties": { "name": "Barksdale AFB", "branch": "Air Force", "city": "Shreveport, LA", "country": "United States", "description": "Air Force Global Strike Command HQ, B-52 wing" }, "geometry": { "type": "Point", "coordinates": [-93.67, 32.50] } },
-    { "type": "Feature", "properties": { "name": "Whiteman AFB", "branch": "Air Force", "city": "Knob Noster, MO", "country": "United States", "description": "509th BW; B-2 Spirit stealth bomber wing" }, "geometry": { "type": "Point", "coordinates": [-93.55, 38.73] } },
-    { "type": "Feature", "properties": { "name": "F.E. Warren AFB", "branch": "Air Force", "city": "Cheyenne, WY", "country": "United States", "description": "90th Missile Wing, Minuteman III ICBMs" }, "geometry": { "type": "Point", "coordinates": [-104.85, 41.14] } },
-    { "type": "Feature", "properties": { "name": "Minot AFB", "branch": "Air Force", "city": "Minot, ND", "country": "United States", "description": "91st MW Minuteman III ICBMs, B-52H bombers" }, "geometry": { "type": "Point", "coordinates": [-101.36, 48.42] } },
-    { "type": "Feature", "properties": { "name": "Malmstrom AFB", "branch": "Air Force", "city": "Great Falls, MT", "country": "United States", "description": "341st MW, Minuteman III ICBMs" }, "geometry": { "type": "Point", "coordinates": [-111.19, 47.51] } },
-    { "type": "Feature", "properties": { "name": "Joint Base Andrews", "branch": "Air Force", "city": "Camp Springs, MD", "country": "United States", "description": "Air Force One home base, 316th Wing" }, "geometry": { "type": "Point", "coordinates": [-76.87, 38.81] } },
-    { "type": "Feature", "properties": { "name": "Joint Base San Antonio", "branch": "Air Force/Army", "city": "San Antonio, TX", "country": "United States", "description": "Largest joint base in DoD; includes Lackland, Randolph, Fort Sam Houston" }, "geometry": { "type": "Point", "coordinates": [-98.62, 29.38] } },
-    { "type": "Feature", "properties": { "name": "MacDill AFB", "branch": "Air Force", "city": "Tampa, FL", "country": "United States", "description": "US CENTCOM HQ, US SOCOM HQ, KC-135 tankers" }, "geometry": { "type": "Point", "coordinates": [-82.52, 27.85] } },
-    { "type": "Feature", "properties": { "name": "Peterson SFB", "branch": "Air Force/Space Force", "city": "Colorado Springs, CO", "country": "United States", "description": "NORAD and USNORTHCOM HQ, Space Delta 4" }, "geometry": { "type": "Point", "coordinates": [-104.70, 38.82] } },
-    { "type": "Feature", "properties": { "name": "Cheyenne Mountain SFS", "branch": "Air Force/Space Force", "city": "Colorado Springs, CO", "country": "United States", "description": "NORAD/USNORTHCOM alternate command center" }, "geometry": { "type": "Point", "coordinates": [-104.86, 38.74] } },
-    { "type": "Feature", "properties": { "name": "Kirtland AFB", "branch": "Air Force", "city": "Albuquerque, NM", "country": "United States", "description": "Air Force Nuclear Weapons Center, DTRA" }, "geometry": { "type": "Point", "coordinates": [-106.55, 35.05] } },
-    { "type": "Feature", "properties": { "name": "Hill AFB", "branch": "Air Force", "city": "Ogden, UT", "country": "United States", "description": "388th FW F-35As, Ogden Air Logistics Complex" }, "geometry": { "type": "Point", "coordinates": [-111.97, 41.12] } },
-    { "type": "Feature", "properties": { "name": "Dyess AFB", "branch": "Air Force", "city": "Abilene, TX", "country": "United States", "description": "B-1B Lancer bomber wing, C-130J" }, "geometry": { "type": "Point", "coordinates": [-99.85, 32.42] } },
-    { "type": "Feature", "properties": { "name": "Seymour Johnson AFB", "branch": "Air Force", "city": "Goldsboro, NC", "country": "United States", "description": "4th FW F-15E Strike Eagles" }, "geometry": { "type": "Point", "coordinates": [-77.96, 35.34] } },
-    { "type": "Feature", "properties": { "name": "Shaw AFB", "branch": "Air Force", "city": "Sumter, SC", "country": "United States", "description": "US Air Forces Central HQ, F-16 wing" }, "geometry": { "type": "Point", "coordinates": [-80.47, 33.97] } },
-    { "type": "Feature", "properties": { "name": "Moody AFB", "branch": "Air Force", "city": "Valdosta, GA", "country": "United States", "description": "23rd Wing A-10s and HH-60G rescue helicopters" }, "geometry": { "type": "Point", "coordinates": [-83.19, 30.97] } },
-    { "type": "Feature", "properties": { "name": "Joint Base Elmendorf-Richardson", "branch": "Air Force/Army", "city": "Anchorage, AK", "country": "United States", "description": "US Army Alaska HQ, F-22 Raptors, Alaskan NORAD" }, "geometry": { "type": "Point", "coordinates": [-149.84, 61.26] } },
-    { "type": "Feature", "properties": { "name": "Eielson AFB", "branch": "Air Force", "city": "North Pole, AK", "country": "United States", "description": "354th FW F-35A wing, Arctic operations" }, "geometry": { "type": "Point", "coordinates": [-146.91, 64.66] } },
-    { "type": "Feature", "properties": { "name": "Joint Base Lewis-McChord", "branch": "Army/Air Force", "city": "Tacoma, WA", "country": "United States", "description": "I Corps HQ, 7th ID, 62nd AW C-17s" }, "geometry": { "type": "Point", "coordinates": [-122.57, 47.11] } },
-
-    { "type": "Feature", "properties": { "name": "MCB Camp Pendleton", "branch": "Marines", "city": "Oceanside, CA", "country": "United States", "description": "I MEF HQ, 1st Marine Division" }, "geometry": { "type": "Point", "coordinates": [-117.42, 33.37] } },
-    { "type": "Feature", "properties": { "name": "MCB Camp Lejeune", "branch": "Marines", "city": "Jacksonville, NC", "country": "United States", "description": "II MEF HQ, 2nd Marine Division" }, "geometry": { "type": "Point", "coordinates": [-77.38, 34.67] } },
-    { "type": "Feature", "properties": { "name": "MCAS Cherry Point", "branch": "Marines", "city": "Havelock, NC", "country": "United States", "description": "2nd MAW, F/A-18, AV-8B Harrier operations" }, "geometry": { "type": "Point", "coordinates": [-76.88, 34.90] } },
-    { "type": "Feature", "properties": { "name": "MCB Quantico", "branch": "Marines", "city": "Triangle, VA", "country": "United States", "description": "Marine Corps University, FBI Academy, DEA training" }, "geometry": { "type": "Point", "coordinates": [-77.31, 38.52] } },
-    { "type": "Feature", "properties": { "name": "MCAS Yuma", "branch": "Marines", "city": "Yuma, AZ", "country": "United States", "description": "Marine Aviation Weapons and Tactics Squadron" }, "geometry": { "type": "Point", "coordinates": [-114.61, 32.66] } },
-    { "type": "Feature", "properties": { "name": "MCAGCC Twentynine Palms", "branch": "Marines", "city": "Twentynine Palms, CA", "country": "United States", "description": "Largest US Marine Corps base, desert warfare training" }, "geometry": { "type": "Point", "coordinates": [-116.06, 34.14] } },
-    { "type": "Feature", "properties": { "name": "MCBH Kaneohe Bay", "branch": "Marines", "city": "Kaneohe, HI", "country": "United States", "description": "III MEF forward element, Pacific operations" }, "geometry": { "type": "Point", "coordinates": [-157.76, 21.45] } },
-
-    { "type": "Feature", "properties": { "name": "Schriever SFB", "branch": "Space Force", "city": "Colorado Springs, CO", "country": "United States", "description": "Space Operations Command, GPS operations" }, "geometry": { "type": "Point", "coordinates": [-104.53, 38.80] } },
-    { "type": "Feature", "properties": { "name": "Vandenberg SFB", "branch": "Space Force", "city": "Lompoc, CA", "country": "United States", "description": "Space Launch Delta 30, West Coast launch facility" }, "geometry": { "type": "Point", "coordinates": [-120.57, 34.74] } },
-    { "type": "Feature", "properties": { "name": "Buckley SFB", "branch": "Space Force/Air Force", "city": "Aurora, CO", "country": "United States", "description": "Space Delta 4, missile warning systems" }, "geometry": { "type": "Point", "coordinates": [-104.76, 39.72] } },
-    { "type": "Feature", "properties": { "name": "Cape Canaveral SFS", "branch": "Space Force", "city": "Cape Canaveral, FL", "country": "United States", "description": "Space Launch Delta 45, Eastern Range" }, "geometry": { "type": "Point", "coordinates": [-80.58, 28.49] } },
-    { "type": "Feature", "properties": { "name": "Patrick SFB", "branch": "Space Force", "city": "Cocoa Beach, FL", "country": "United States", "description": "Space Force 45th Space Wing support base" }, "geometry": { "type": "Point", "coordinates": [-80.57, 28.23] } },
-
-    { "type": "Feature", "properties": { "name": "Kadena AB", "branch": "Air Force", "city": "Okinawa", "country": "Japan", "description": "Largest US Air Force base in Asia; F-15C/D/E, KC-135, RC-135" }, "geometry": { "type": "Point", "coordinates": [127.77, 26.35] } },
-    { "type": "Feature", "properties": { "name": "Yokota AB", "branch": "Air Force", "city": "Fussa, Tokyo", "country": "Japan", "description": "US Forces Japan HQ, 374th AW C-130s" }, "geometry": { "type": "Point", "coordinates": [139.34, 35.75] } },
-    { "type": "Feature", "properties": { "name": "Misawa AB", "branch": "Air Force/Navy", "city": "Misawa", "country": "Japan", "description": "F-16 wing, joint surveillance operations" }, "geometry": { "type": "Point", "coordinates": [141.37, 40.71] } },
-    { "type": "Feature", "properties": { "name": "MCAS Iwakuni", "branch": "Marines/Navy", "city": "Iwakuni", "country": "Japan", "description": "F/A-18 wing, joint US-Japan operations" }, "geometry": { "type": "Point", "coordinates": [132.24, 34.14] } },
-    { "type": "Feature", "properties": { "name": "Naval Base Sasebo", "branch": "Navy", "city": "Sasebo", "country": "Japan", "description": "US 7th Fleet forward-deployed amphibious group" }, "geometry": { "type": "Point", "coordinates": [129.72, 33.16] } },
-    { "type": "Feature", "properties": { "name": "Fleet Activities Yokosuka", "branch": "Navy", "city": "Yokosuka", "country": "Japan", "description": "US 7th Fleet HQ, USS Ronald Reagan homeport" }, "geometry": { "type": "Point", "coordinates": [139.66, 35.29] } },
-    { "type": "Feature", "properties": { "name": "Camp Humphreys", "branch": "Army", "city": "Pyeongtaek", "country": "South Korea", "description": "USFK HQ, 2nd Infantry Division, largest US overseas base" }, "geometry": { "type": "Point", "coordinates": [127.01, 36.96] } },
-    { "type": "Feature", "properties": { "name": "Osan AB", "branch": "Air Force", "city": "Osan", "country": "South Korea", "description": "7th Air Force HQ, A-10s, U-2 Dragon Lady" }, "geometry": { "type": "Point", "coordinates": [127.03, 37.09] } },
-    { "type": "Feature", "properties": { "name": "Kunsan AB", "branch": "Air Force", "city": "Gunsan", "country": "South Korea", "description": "8th FW F-16C/D wing" }, "geometry": { "type": "Point", "coordinates": [126.62, 35.90] } },
-
-    { "type": "Feature", "properties": { "name": "Ramstein AB", "branch": "Air Force", "city": "Kaiserslautern", "country": "Germany", "description": "US Air Forces Europe HQ, USAFE; major transit hub" }, "geometry": { "type": "Point", "coordinates": [7.60, 49.44] } },
-    { "type": "Feature", "properties": { "name": "Spangdahlem AB", "branch": "Air Force", "city": "Spangdahlem", "country": "Germany", "description": "52nd FW F-16 wing, A-10s" }, "geometry": { "type": "Point", "coordinates": [6.69, 49.97] } },
-    { "type": "Feature", "properties": { "name": "RAF Lakenheath", "branch": "Air Force", "city": "Lakenheath", "country": "United Kingdom", "description": "48th FW; largest US Air Force fighter base in Europe; F-35As" }, "geometry": { "type": "Point", "coordinates": [0.56, 52.41] } },
-    { "type": "Feature", "properties": { "name": "RAF Mildenhall", "branch": "Air Force", "city": "Mildenhall", "country": "United Kingdom", "description": "100th ARW KC-135 tankers; special ops aviation" }, "geometry": { "type": "Point", "coordinates": [0.49, 52.36] } },
-    { "type": "Feature", "properties": { "name": "Aviano AB", "branch": "Air Force", "city": "Aviano", "country": "Italy", "description": "31st FW F-16 wing; US Air Forces Europe" }, "geometry": { "type": "Point", "coordinates": [12.60, 46.03] } },
-    { "type": "Feature", "properties": { "name": "NAS Sigonella", "branch": "Navy", "city": "Sigonella", "country": "Italy", "description": "Naval Air Station, P-8 Poseidon, MQ-4C Triton" }, "geometry": { "type": "Point", "coordinates": [14.92, 37.40] } },
-    { "type": "Feature", "properties": { "name": "Naval Station Rota", "branch": "Navy", "city": "Rota", "country": "Spain", "description": "US 6th Fleet forward base; Aegis BMD destroyers" }, "geometry": { "type": "Point", "coordinates": [-6.35, 36.64] } },
-    { "type": "Feature", "properties": { "name": "Morón AB", "branch": "Air Force", "city": "Morón de la Frontera", "country": "Spain", "description": "Special Operations air base; theater airlift" }, "geometry": { "type": "Point", "coordinates": [-5.62, 37.17] } },
-    { "type": "Feature", "properties": { "name": "Incirlik AB", "branch": "Air Force", "city": "Adana", "country": "Turkey", "description": "39th ABW; NATO base; B61 nuclear weapons storage" }, "geometry": { "type": "Point", "coordinates": [35.43, 37.00] } },
-    { "type": "Feature", "properties": { "name": "NSA Souda Bay", "branch": "Navy", "city": "Souda Bay, Crete", "country": "Greece", "description": "Naval Support Activity, P-3/P-8 operations, 6th Fleet port" }, "geometry": { "type": "Point", "coordinates": [24.07, 35.53] } },
-    { "type": "Feature", "properties": { "name": "Camp Bondsteel", "branch": "Army", "city": "Ferizaj", "country": "Kosovo", "description": "US peacekeeping base, HQ KFOR" }, "geometry": { "type": "Point", "coordinates": [21.35, 42.36] } },
-    { "type": "Feature", "properties": { "name": "Keflavik NAS (NATO)", "branch": "Navy/Air Force", "city": "Reykjanesbær", "country": "Iceland", "description": "US/NATO presence at Keflavik; P-8 ASW patrols" }, "geometry": { "type": "Point", "coordinates": [-22.62, 63.99] } },
-    { "type": "Feature", "properties": { "name": "Thule AB (Pituffik)", "branch": "Air Force/Space Force", "city": "Qaanaaq region", "country": "Greenland", "description": "Northernmost US military installation; Space Force radar, DEW line" }, "geometry": { "type": "Point", "coordinates": [-68.70, 76.53] } },
-
-    { "type": "Feature", "properties": { "name": "NSA Bahrain (5th Fleet HQ)", "branch": "Navy", "city": "Manama", "country": "Bahrain", "description": "US 5th Fleet and NAVCENT HQ; Combined Maritime Forces" }, "geometry": { "type": "Point", "coordinates": [50.59, 26.21] } },
-    { "type": "Feature", "properties": { "name": "Al Udeid AB", "branch": "Air Force", "city": "Al Udeid", "country": "Qatar", "description": "US CENTCOM Forward HQ; 379th AEW; largest US AF base in CENTCOM AOR" }, "geometry": { "type": "Point", "coordinates": [51.31, 25.12] } },
-    { "type": "Feature", "properties": { "name": "Camp Arifjan", "branch": "Army", "city": "As Salimiyah", "country": "Kuwait", "description": "Army Central HQ; major logistics hub for Middle East" }, "geometry": { "type": "Point", "coordinates": [47.93, 29.20] } },
-    { "type": "Feature", "properties": { "name": "Ali Al Salem AB", "branch": "Air Force", "city": "Ali Al Salem", "country": "Kuwait", "description": "386th AEW; C-17, KC-135 operations" }, "geometry": { "type": "Point", "coordinates": [47.52, 29.34] } },
-    { "type": "Feature", "properties": { "name": "Camp Lemonnier", "branch": "Navy/Joint", "city": "Djibouti City", "country": "Djibouti", "description": "US Africa Command forward base; JSOC, drone ops, CJTF-HOA" }, "geometry": { "type": "Point", "coordinates": [43.14, 11.54] } },
-    { "type": "Feature", "properties": { "name": "Diego Garcia (BIOT)", "branch": "Navy/Air Force", "city": "Diego Garcia Atoll", "country": "British Indian Ocean Territory", "description": "B-2/B-52 bomber staging; Diego Garcia naval base; Indian Ocean hub" }, "geometry": { "type": "Point", "coordinates": [72.41, -7.31] } },
-    { "type": "Feature", "properties": { "name": "Al Dhafra AB", "branch": "Air Force", "city": "Abu Dhabi", "country": "United Arab Emirates", "description": "380th AEW; F-35As; ISR and tanker operations" }, "geometry": { "type": "Point", "coordinates": [54.54, 24.25] } },
-    { "type": "Feature", "properties": { "name": "Prince Sultan AB", "branch": "Air Force", "city": "Al Kharj", "country": "Saudi Arabia", "description": "US return 2019; F-15, THAAD, Patriot systems" }, "geometry": { "type": "Point", "coordinates": [47.58, 24.06] } },
-    { "type": "Feature", "properties": { "name": "Ain al-Asad AB", "branch": "Army/Air Force", "city": "Al Anbar", "country": "Iraq", "description": "Ongoing US presence supporting Iraqi security forces" }, "geometry": { "type": "Point", "coordinates": [42.44, 33.79] } },
-    { "type": "Feature", "properties": { "name": "Erbil AB", "branch": "Army/Air Force", "city": "Erbil", "country": "Iraq", "description": "US forces supporting anti-ISIS operations in Kurdish region" }, "geometry": { "type": "Point", "coordinates": [44.01, 36.23] } },
-
-    { "type": "Feature", "properties": { "name": "Andersen AFB", "branch": "Air Force", "city": "Yigo", "country": "Guam", "description": "36th Wing; B-52 rotations; Pacific Air Forces base" }, "geometry": { "type": "Point", "coordinates": [144.93, 13.58] } },
-    { "type": "Feature", "properties": { "name": "Naval Base Guam", "branch": "Navy/Marines", "city": "Apra Harbor", "country": "Guam", "description": "US 7th Fleet forward submarine base; MCAS Guam" }, "geometry": { "type": "Point", "coordinates": [144.66, 13.44] } },
-    { "type": "Feature", "properties": { "name": "Guantanamo Bay NAS", "branch": "Navy/Joint", "city": "Guantánamo", "country": "Cuba", "description": "Oldest US overseas base; JTF-GTMO detention facility" }, "geometry": { "type": "Point", "coordinates": [-75.10, 19.91] } },
-    { "type": "Feature", "properties": { "name": "Fort Buchanan", "branch": "Army", "city": "San Juan", "country": "Puerto Rico (US)", "description": "US Army Reserve Command, Caribbean operations" }, "geometry": { "type": "Point", "coordinates": [-66.11, 18.43] } },
-    { "type": "Feature", "properties": { "name": "Camp Simba / Manda Bay", "branch": "Army/Air Force", "city": "Lamu", "country": "Kenya", "description": "Counter-terrorism forward operating location" }, "geometry": { "type": "Point", "coordinates": [41.23, -2.26] } }
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fort Liberty (Bragg)",
+        "branch": "Army",
+        "city": "Fayetteville, NC",
+        "country": "United States",
+        "description": "Home of 82nd Airborne Division, USSOCOM"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79,
+          35.14
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fort Cavazos (Hood)",
+        "branch": "Army",
+        "city": "Killeen, TX",
+        "country": "United States",
+        "description": "Home of III Armored Corps, 1st Cavalry Division"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.78,
+          31.12
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fort Campbell",
+        "branch": "Army",
+        "city": "Clarksville, TN/KY",
+        "country": "United States",
+        "description": "Home of 101st Airborne Division (Air Assault)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.47,
+          36.66
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fort Bliss",
+        "branch": "Army",
+        "city": "El Paso, TX",
+        "country": "United States",
+        "description": "Home of 1st Armored Division, Army Air Defense"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.38,
+          31.8
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fort Moore (Benning)",
+        "branch": "Army",
+        "city": "Columbus, GA",
+        "country": "United States",
+        "description": "Home of Armor School, Ranger School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.97,
+          32.35
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fort Johnson (Polk)",
+        "branch": "Army",
+        "city": "Leesville, LA",
+        "country": "United States",
+        "description": "JRTC training center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.21,
+          31.05
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fort Stewart",
+        "branch": "Army",
+        "city": "Hinesville, GA",
+        "country": "United States",
+        "description": "Home of 3rd Infantry Division"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.62,
+          31.87
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fort Carson",
+        "branch": "Army",
+        "city": "Colorado Springs, CO",
+        "country": "United States",
+        "description": "Home of 4th Infantry Division"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.79,
+          38.73
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fort Riley",
+        "branch": "Army",
+        "city": "Junction City, KS",
+        "country": "United States",
+        "description": "Home of 1st Infantry Division (Big Red One)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.79,
+          39.05
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fort Drum",
+        "branch": "Army",
+        "city": "Watertown, NY",
+        "country": "United States",
+        "description": "Home of 10th Mountain Division"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.77,
+          44.05
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fort Wainwright",
+        "branch": "Army",
+        "city": "Fairbanks, AK",
+        "country": "United States",
+        "description": "Home of 1st Stryker Brigade Combat Team"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -147.64,
+          64.83
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fort Irwin (NTC)",
+        "branch": "Army",
+        "city": "Barstow, CA",
+        "country": "United States",
+        "description": "National Training Center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.69,
+          35.27
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fort Huachuca",
+        "branch": "Army",
+        "city": "Sierra Vista, AZ",
+        "country": "United States",
+        "description": "US Army Intelligence Center, network ops"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.34,
+          31.55
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fort Leavenworth",
+        "branch": "Army",
+        "city": "Leavenworth, KS",
+        "country": "United States",
+        "description": "Army Command and General Staff College, USDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.92,
+          39.35
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "West Point (USMA)",
+        "branch": "Army",
+        "city": "West Point, NY",
+        "country": "United States",
+        "description": "US Military Academy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96,
+          41.39
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fort Meade",
+        "branch": "Army/NSA",
+        "city": "Laurel, MD",
+        "country": "United States",
+        "description": "NSA headquarters, US Cyber Command, DISA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.76,
+          39.11
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fort Bragg / Pope AAF",
+        "branch": "Army/Air Force",
+        "city": "Fayetteville, NC",
+        "country": "United States",
+        "description": "Special Operations Command complex"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.94,
+          35.2
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fort Shafter",
+        "branch": "Army",
+        "city": "Honolulu, HI",
+        "country": "United States",
+        "description": "US Army Pacific headquarters"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -157.86,
+          21.34
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Joint Base Langley-Eustis",
+        "branch": "Air Force/Army",
+        "city": "Hampton, VA",
+        "country": "United States",
+        "description": "Air Combat Command HQ, F-22 Raptor wing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.36,
+          37.08
+        ]
+      }
+    },
+    
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Joint Base San Antonio",
+        "branch": "Air Force/Army",
+        "city": "San Antonio, TX",
+        "country": "United States",
+        "description": "Largest joint base in DoD; includes Lackland, Randolph, Fort Sam Houston"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.62,
+          29.38
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Peterson SFB",
+        "branch": "Air Force/Space Force",
+        "city": "Colorado Springs, CO",
+        "country": "United States",
+        "description": "NORAD and USNORTHCOM HQ, Space Delta 4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.7,
+          38.82
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cheyenne Mountain SFS",
+        "branch": "Air Force/Space Force",
+        "city": "Colorado Springs, CO",
+        "country": "United States",
+        "description": "NORAD/USNORTHCOM alternate command center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.86,
+          38.74
+        ]
+      }
+    },
+    
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Joint Base Elmendorf-Richardson",
+        "branch": "Air Force/Army",
+        "city": "Anchorage, AK",
+        "country": "United States",
+        "description": "US Army Alaska HQ, F-22 Raptors, Alaskan NORAD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -149.84,
+          61.26
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Joint Base Lewis-McChord",
+        "branch": "Army/Air Force",
+        "city": "Tacoma, WA",
+        "country": "United States",
+        "description": "I Corps HQ, 7th ID, 62nd AW C-17s"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.57,
+          47.11
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Schriever SFB",
+        "branch": "Space Force",
+        "city": "Colorado Springs, CO",
+        "country": "United States",
+        "description": "Space Operations Command, GPS operations"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.53,
+          38.8
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vandenberg SFB",
+        "branch": "Space Force",
+        "city": "Lompoc, CA",
+        "country": "United States",
+        "description": "Space Launch Delta 30, West Coast launch facility"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.57,
+          34.74
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Buckley SFB",
+        "branch": "Space Force/Air Force",
+        "city": "Aurora, CO",
+        "country": "United States",
+        "description": "Space Delta 4, missile warning systems"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.76,
+          39.72
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cape Canaveral SFS",
+        "branch": "Space Force",
+        "city": "Cape Canaveral, FL",
+        "country": "United States",
+        "description": "Space Launch Delta 45, Eastern Range"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.58,
+          28.49
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Patrick SFB",
+        "branch": "Space Force",
+        "city": "Cocoa Beach, FL",
+        "country": "United States",
+        "description": "Space Force 45th Space Wing support base"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.57,
+          28.23
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Camp Humphreys",
+        "branch": "Army",
+        "city": "Pyeongtaek",
+        "country": "South Korea",
+        "description": "USFK HQ, 2nd Infantry Division, largest US overseas base"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.01,
+          36.96
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Camp Bondsteel",
+        "branch": "Army",
+        "city": "Ferizaj",
+        "country": "Kosovo",
+        "description": "US peacekeeping base, HQ KFOR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.35,
+          42.36
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Thule AB (Pituffik)",
+        "branch": "Air Force/Space Force",
+        "city": "Qaanaaq region",
+        "country": "Greenland",
+        "description": "Northernmost US military installation; Space Force radar, DEW line"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.7,
+          76.53
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Camp Arifjan",
+        "branch": "Army",
+        "city": "As Salimiyah",
+        "country": "Kuwait",
+        "description": "Army Central HQ; major logistics hub for Middle East"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.93,
+          29.2
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ain al-Asad AB",
+        "branch": "Army/Air Force",
+        "city": "Al Anbar",
+        "country": "Iraq",
+        "description": "Ongoing US presence supporting Iraqi security forces"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          42.44,
+          33.79
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Erbil AB",
+        "branch": "Army/Air Force",
+        "city": "Erbil",
+        "country": "Iraq",
+        "description": "US forces supporting anti-ISIS operations in Kurdish region"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.01,
+          36.23
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fort Buchanan",
+        "branch": "Army",
+        "city": "San Juan",
+        "country": "Puerto Rico (US)",
+        "description": "US Army Reserve Command, Caribbean operations"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.11,
+          18.43
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Camp Simba / Manda Bay",
+        "branch": "Army/Air Force",
+        "city": "Lamu",
+        "country": "Kenya",
+        "description": "Counter-terrorism forward operating location"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.23,
+          -2.26
+        ]
+      }
+    }
   ]
 }
