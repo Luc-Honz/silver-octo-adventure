@@ -1,1 +1,74 @@
-to access the dashbaord go to http://localhost:3002
+GEOPOLITICAL DASHBOARD
+======================
+
+A full-screen live dashboard combining a geopolitical map, real-time commodity
+prices, live flight radar, and news streams — all served from a single local server.
+
+WHAT'S INCLUDED
+---------------
+- Interactive world map with Ukraine front line, global data centers, and US military bases
+- Live flight radar (US-registered aircraft via ADS-B)
+- Real-time commodity prices: Gold, Silver, Copper, Bitcoin, EUR/USD, Oil (via Yahoo Finance)
+- Embedded live video streams (Fox News + Yahoo Finance)
+- Personal audio stream player with volume and play/pause controls
+- Live clock in your local timezone
+
+
+REQUIREMENTS
+------------
+- Node.js v18 or newer  (https://nodejs.org)
+- npm (comes with Node.js)
+- An internet connection (for live prices, flight data, and map tiles)
+
+
+SETUP
+-----
+
+1. Clone the repository
+
+     git clone https://github.com/Luc-Honz/silver-octo-adventure.git
+     cd silver-octo-adventure
+
+2. Move into the dashboard folder and install dependencies
+
+     cd dashboard
+     npm install
+
+3. Start the server
+
+     node server.js
+
+4. Open your browser and go to
+
+     http://localhost:3002
+
+That's it. The dashboard will open automatically serving all data from the single
+local server. No other servers or processes are needed.
+
+
+USAGE TIPS
+----------
+- Geo Map:     Use the toggle buttons at the top to show/hide the front line,
+               data centers, military bases, and live flights.
+               Click any marker or plane dot for details.
+
+- Flights:     Click "Flights" to enable live ADS-B tracking (US aircraft only).
+               Dots refresh every 15 seconds.
+
+- Prices:      Commodity prices refresh every 15 seconds from Yahoo Finance.
+               Green = up from previous close, Red = down.
+
+- Streams:     Click "Set Stream" on the Fox News or Yahoo Finance panels and
+               paste any YouTube live stream URL.
+
+- Audio:       Paste a YouTube URL into the center panel to play audio-only in
+               the background. Use the volume slider and play/pause button.
+
+
+PORTS
+-----
+Everything runs on a single port:
+
+     http://localhost:3002
+
+No other ports are used.
