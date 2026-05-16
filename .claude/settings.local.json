@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"require\\('./data/ukraine_frontline.json'\\); require\\('./data/datacenters.json'\\); require\\('./data/us_military_bases.json'\\); console.log\\('All JSON files valid'\\)\")",
+      "Bash(node -e ' *)",
+      "Bash(node server.js)",
+      "Bash(curl -s http://localhost:3000/api)",
+      "Bash(python3 -m json.tool)",
+      "Bash(curl -s \"http://localhost:3000/api/datacenters?provider=AWS\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(f'AWS regions: {len\\(d[\\\\\"features\\\\\"]\\)}'\\)\")",
+      "Bash(curl -s \"http://localhost:3000/api/military/bases?country=japan\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(f'Japan bases: {len\\(d[\\\\\"features\\\\\"]\\)}'\\)\")",
+      "Bash(kill %1)"
+    ]
+  }
+}

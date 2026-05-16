@@ -1,0 +1,110 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "description": "Approximate Ukraine-Russia war contact line based on public reporting",
+    "source": "Derived from public sources including Institute for the Study of War (ISW), Deepstatemap, and open-source reporting",
+    "lastUpdated": "2025-01-01",
+    "disclaimer": "This data is approximate and for informational purposes only. The front line changes daily. For current data see: https://isw.pub/UkrWar and https://deepstatemap.live",
+    "note": "Russia also occupies Crimea (annexed 2014) and portions of Luhansk, Donetsk, Zaporizhzhia, and Kherson oblasts"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Main Contact Line",
+        "description": "Primary Ukraine-Russia front line, north to south",
+        "color": "#FF4444"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [36.97, 50.29],
+          [37.05, 50.18],
+          [37.15, 50.08],
+          [37.28, 49.97],
+          [37.42, 49.85],
+          [37.55, 49.72],
+          [37.63, 49.58],
+          [37.74, 49.42],
+          [37.88, 49.22],
+          [38.00, 49.12],
+          [38.18, 49.00],
+          [38.28, 48.93],
+          [38.22, 48.80],
+          [38.10, 48.70],
+          [38.02, 48.60],
+          [37.93, 48.53],
+          [37.88, 48.43],
+          [37.82, 48.33],
+          [37.76, 48.22],
+          [37.72, 48.13],
+          [37.65, 48.05],
+          [37.55, 47.98],
+          [37.42, 47.93],
+          [37.30, 47.87],
+          [37.18, 47.78],
+          [37.05, 47.68],
+          [36.88, 47.60],
+          [36.65, 47.54],
+          [36.35, 47.52],
+          [36.00, 47.50],
+          [35.72, 47.45],
+          [35.52, 47.33],
+          [35.40, 47.18],
+          [35.28, 47.05],
+          [35.12, 46.90],
+          [34.85, 46.78],
+          [34.42, 46.68],
+          [34.00, 46.63],
+          [33.55, 46.58],
+          [33.10, 46.54],
+          [32.72, 46.51],
+          [32.55, 46.60],
+          [32.30, 46.52],
+          [32.00, 46.47],
+          [31.75, 46.38]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Crimea Peninsula",
+        "description": "Russian-occupied since 2014 annexation",
+        "status": "occupied"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [32.48, 45.38],
+            [33.60, 45.10],
+            [34.80, 45.00],
+            [35.80, 45.20],
+            [36.65, 45.38],
+            [36.40, 45.62],
+            [35.50, 45.88],
+            [34.20, 46.10],
+            [33.20, 46.15],
+            [32.50, 46.00],
+            [31.80, 45.72],
+            [31.90, 45.50],
+            [32.48, 45.38]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kursk Incursion Zone",
+        "description": "Ukrainian-held territory inside Kursk Oblast, Russia (as of late 2024, extent varies)",
+        "status": "contested"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.40, 51.65]
+      }
+    }
+  ]
+}
